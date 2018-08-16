@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <h3 class="text-center">
+                智能导诊展示v1.0
+            </h3>
+        </div>
+    </div>
+    <hr style="border-top:3px solid black;margin:2px;">
+    <div class="row-fluid">
+        <div class="span7" >
+            <div class="row-fluid">
+                <div class="span12">
+                    <form class="form-search">
+                        <h3>
+                            提问：<input id="query_input" class="input-xxlarge search-query" type="text"/>
+                            <button class="btn"  id="query_button">推荐科室</button>
+                        </h3>
+                    </form>
+                    <p id='query_parse'><span style='background:rgba(255,255,0,0.1);'>示例段落</span></p>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>
+                                推荐科室
+                            </th>
+                            <th>
+                                分数
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody id="query_table">
+                        <tr>
+                            <td>
+                                示例科室
+                            </td>
+                            <td>
+                                示例分数
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                示例科室
+                            </td>
+                            <td>
+                                示例分数
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                示例科室
+                            </td>
+                            <td>
+                                示例分数
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                示例科室
+                            </td>
+                            <td>
+                                示例分数
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <p>
+                        <em>注：点击推荐科室获取科室推荐信息，同时高亮重点词汇</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="span1"></div>
+        <div class="span4">
+            <div class="row-fluid">
+                <div class="span12">
+                    <h4>
+                        问题样例
+                    </h4>
+                    <ul>
+                        <li>
+                            头疼挂什么科
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="./js/query_button.js" charset="UTF-8"></script>
+</body>
+</html>
